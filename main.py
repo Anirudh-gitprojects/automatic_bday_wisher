@@ -23,7 +23,7 @@ if this_date in new_dict:
     with smtplib.SMTP("smtp.gmail.com",port=587) as connection:
         connection.starttls()
         connection.login("YOUR_EMAIL@gmail.com",password="[YOUR PASSKEY")
-        connection.sendmail(from_addr="anismessages@gmail.com",to_addrs=f"{bday_person['email']}",msg=f"Subject:Happy Birthday!\n\n{a}")
+        connection.sendmail(from_addr="YOUREMAIL@gmail.com",to_addrs=f"{bday_person['email']}",msg=f"Subject:Happy Birthday!\n\n{a}")
 # 1. Update the birthdays.csv
 
 # 2. Check if today matches a birthday in the birthdays.csv
